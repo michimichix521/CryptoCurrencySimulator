@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+  margin:0;
+  background-color:darkgray;
+  color:#000;
+  font-size:20px;
+}
+
+/* headerに関して */
+
+header{
+  height:150px;
+  background-color:maroon;
+  font-size:40px;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  user-select:none;
+}
+
+header h1{
+  margin:0;
+}
+
+.change_button{
+  justify-content:flex-start;
+  width:100px;
+  height:100px;
+  background-color:green;
+  line-height:100px;
+  text-align:center;
+  font-size:40px;
+  color:white;
+  border-radius:50%;
+  border:5px solid blue;
+  box-sizing:border-box;
+  cursor:pointer;
+
+  position:fixed;
+  top:0%;
+  left:0%;
+}
+
+.change_button:hover{
+  opacity:.7;
+}
+
+/* containerに関して */
+
+.container{
+  width:1200px;
+  height:500px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+
+  position:fixed;
+  left:calc(50% - 1200px/2);
+
+  user-select:none;
+}
+
+.container p{
+  margin:0;
+}
+
+.user{
+  padding:0 20px;
+  width:450px;
+  background-color:skyblue;
+  border-radius:20px;
+  border:5px solid blue;
+  box-sizing:border-box;
+}
+
+ul{
+  margin:50px 0;
+  font-size:21px;
+  list-style-type:none;
+  padding:0;
+}
+
+li{
+  display:flex;
+}
+
+.send{
+  margin-top:50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.send_button{
+  width:200px;
+  padding:10px;
+  font-size:40px;
+  background-color:red;
+  text-align:center;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  user-select:none;
+}
+
+.send_button:hover{
+  opacity:.7;
+}
+
+/* blockchainに関して */
+
+.block{
+  margin:0 auto;
+  width:1000px;
+  background-color:wheat;
+  border-radius:10px;
+  user-select:auto;
+
+  border:10px double chocolate;
+  box-sizing:border-box;
+
+}
+
+.block p{
+  margin:0;
+  padding:0 10px;
+}
+
+.blockchain_opacity{
+  opacity:.8;
+}
+
+.chain{
+  margin:0 auto;
+  width:200px;
+  height:50px;
+
+  border-left:10px double chocolate;
+  border-right:10px double chocolate;
+  box-sizing:border-box;
+}

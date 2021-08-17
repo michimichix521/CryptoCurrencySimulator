@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>暗号通貨シミュレータ</title>
+  <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+  <header>
+    <h1>暗号通貨シミュレータ</h1>
+    <div class="button change_button">切替</div>
+  </header>
+
+  <div class="container">
+    <section class="user">
+      <ul>
+        <li><p>ユーザAの所持金額:</p><div class="userA_money"></div></li>
+        <li><p>ユーザAの送金金額:</p><input type="text" name="input_textA" value="" size=25></li>
+      </ul>
+
+      <ul>
+        <li><p>ユーザBの所持金額:</p><div class="userB_money"></div></li>
+        <li><p>ユーザBの送金金額:</p><input type="text" name="input_textB" value="" size=25></li>
+      </ul>
+
+      <div class="send">
+        <div class="fee"></div>
+        <div class="button send_button">送金</div>
+        <div class="warning"></div>
+      </div>
+    </section>
+
+    <section class="blockchain_canvas">
+      <canvas class="canvas" width="700" height="500">
+        canvasを表示できません
+      </canvas>
+    </section>
+  </div>
+
+  <!-- ブロックチェーンが伸びていく -->
+  <div class="blockchain"></div>
+
+  <script src="js/sha256.js"></script>
+  <script src="js/blockchain.js"></script>
+  <script src="js/p2p.js"></script>
+  <script src="js/transaction.js"></script>
+  <script src="js/user.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
